@@ -1,0 +1,45 @@
+/*******MENU*******/
+/******************/
+
+.navbarWrapper {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 0 20px;
+}
+
+.navbar {
+  width: 1400px;
+  margin: auto;
+  display: flex;
+  height: 90px;
+}
+
+.navbarWrapper ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+  list-style: none;
+}
+
+.navbarWrapper ul a {
+  text-align: center;
+  color: #4c4c4c;
+  font-weight: bold;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: 0.3s all;
+}
+
+.navbarWrapper ul a:hover {
+  color: #db1d2c !important;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1450px) {
+  .navbar {
+    width: 100%;
+  }
+}
