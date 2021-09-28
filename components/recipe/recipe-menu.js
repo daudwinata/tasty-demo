@@ -4,7 +4,7 @@ const RecipeMenus = ({ itemsProp }) => {
             {itemsProp.map((menuItem) => {
                 const { id, image, category } = menuItem;
                 return (
-                    <div className="filter-recipe-section">
+                    <div className="filter-recipe-section" key={id} >
                         <div className="filter-background-zoom">
                             <img alt={category} key={id} src={image} />
                         </div>
