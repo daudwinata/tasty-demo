@@ -3,7 +3,7 @@ function Footer () {
   return (
     <div className="footer">
         <ul className="menu menu--footer nav">
-            <li className="first">
+            <li>
                 <a href="/en-ca/about-tasty-rewards">About Us</a>
             </li>
             <li>
