@@ -6,15 +6,17 @@ function Menu () {
     <div className={classes.navbarWrapper}>
       <div className={classes.navbar}>
         <Link href="/" passHref>
-          <img src="images/tasty-logo.png"/>
+          <img src="/images/tasty-logo.png"/>
         </Link>
         <ul>
           <li>
-            <Link href="/contest">Contest</Link>
+            <Link href="/brands">Brands</Link>
           </li>
+
           <li>
-            <Link href="/brand">Brand</Link>
+            <Link href="/contests">Contests</Link>
           </li>
+          
           <li>
             <Link href="/recipes">Recipes</Link>
           </li>

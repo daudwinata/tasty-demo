@@ -1,16 +1,15 @@
-import Menu from '../../components/menu/menu.js';
 import HomepageSlider from '../../components/banner-slider/homepage-slider.js';
-import Brand from '../../components/brand/brand.js';
+import Contests from '../../components/contests/contests.js';
 import Coupon from '../../components/coupon/coupon.js';
 import JoinTasty from '../../components/join-tasty/join-tasty.js';
 import Footer from '../../components/footer/footer.js';
 
-function RecipePage(){
+function ContestPage(){
     return(
     <>
-        <Menu/>
         <HomepageSlider/>
-        <Brand/>
+        <Contests/>
+
         <Coupon/>
         <JoinTasty/>
         <Footer/>
@@ -18,4 +17,4 @@ function RecipePage(){
     )
 }
 
-export default RecipePage;
+export default ContestPage;

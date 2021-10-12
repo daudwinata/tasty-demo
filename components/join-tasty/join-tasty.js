@@ -2,7 +2,7 @@ function JoinTasty () {
 
   return (
     <div className="joinTasty">
-       <img alt="Save $0.50" src="./images/tasty-logo.png" />
+       <img alt="Save $0.50" src="/images/tasty-logo.png" />
        <div className="joinTastyTextWrapper">
             <h2>Join the Tasty Rewards<sup>TM</sup><br/> Experience!</h2>
             <p className="footer-blue">Get full access to Tasty Rewards<sup>TM</sup> and exclusive content by becoming a member.</p>

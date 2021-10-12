@@ -11,6 +11,7 @@ const RecipeCategories = ({ itemsProp, categories, filterItems }) => {
                             src="./images/recipe/bean-cheese.jpg"
                             alt={category}
                         />
+                        
                         <p>{category}</p>
                     </div>
                 );

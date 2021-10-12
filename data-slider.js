@@ -2,7 +2,7 @@ const people = [
   {
     id: 1,
     image:
-      'images/slide-1.jpg',
+      '/images/slide-1.jpg',
     name: 'maria ferguson',
     title: 'contest banner',
     text:
@@ -11,7 +11,7 @@ const people = [
   {
     id: 2,
     image:
-      'images/slide-2.png',
+      '/images/slide-2.png',
     name: 'john doe',
     title: 'pepsico banner',
     text:
@@ -20,7 +20,7 @@ const people = [
   {
     id: 3,
     image:
-      'images/slide-3.jpg',
+      '/images/slide-3.jpg',
     text: 'life banner'
   }
 ];

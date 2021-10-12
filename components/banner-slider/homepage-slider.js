@@ -47,10 +47,10 @@ function HomepageSlider (props) {
           );
         })}
         <button className="prev" onClick={() => setIndex(index - 1)}>
-          <img src="./images/arrow-left.png" alt="toggle" />
+          <img src="/images/arrow-left.png" alt="toggle" />
         </button>
         <button className="next" onClick={() => setIndex(index + 1)}>
-          <img src="../images/arrow-right.png" alt="toggle" />
+          <img src="/images/arrow-right.png" alt="toggle" />
         </button>
       </div>
     )

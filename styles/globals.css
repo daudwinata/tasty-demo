@@ -15,6 +15,10 @@ a {
   box-sizing: border-box;
 }
 
+p {
+  font-size: 18px;
+}
+
 .buttonRed {
   background-color: #db1d2c;
   padding: 12px 10px;
@@ -123,8 +127,12 @@ a {
   text-align: center;
   color: #0e4caa;
   font-weight: bold;
-  width: 1100px;
+  width: 1140px;
   margin: auto;
+}
+
+.filter-main-wrapper h1 {
+  font-size: 52px;
 }
 
 .btn-container-wrapper {
@@ -152,8 +160,39 @@ a {
 .filter-recipe-section {
   display: flex;
   flex-direction: column;
+  align-items: baseline;
   width: 31%;
   margin-bottom: 40px;
+}
+
+.filter-recipe-section p {
+  font-size: 25px;
+  height: 75px;
+  text-align: left;
+}
+
+.filter-recipe-section p:last-child {
+  text-align: left;
+  color: #000;
+  margin: 0;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.recipe__review-wrapper {
+  display: flex;
+  padding: 0 0 16px 0;
+}
+
+.recipe__star {
+  display: flex;
+  align-items: center;
+}
+
+.recipe__star span {
+  padding: 0 20px 0 7px;
+  color: #000;
+  font-weight: lighter;
 }
 
 .filter-background-zoom {
@@ -187,6 +226,163 @@ a {
   width: 140px;
   margin-bottom: 15px;
   border-radius: 70px;
+}
+
+/*******RECIPE DETAIL*******/
+/***************************/
+
+.recipe-detail-wrapper {
+  width: 1100px;
+  margin: auto;
+}
+
+.recipe-detail-title {
+  color: #0e4caa;
+  padding-top: 30px;
+  font-size: 52px;
+  margin-bottom: 0;
+}
+
+.recipe-detail-ads {
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+  width: 100%;
+  color: #0e4caa;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.recipe-detail-ads img {
+  width: 10%;
+}
+
+.recipe-detail-instruction {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.recipe-detail-instruction p {
+  width: 50%;
+}
+
+.recipe-detail__icon-text {
+  text-align: center;
+}
+
+.recipe-detail-cook-instruction {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  padding-right: 40px;
+}
+
+.recipe-detail-cook-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.recipe-detail-cook-wrap img {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 100px;
+}
+
+.recipe-detail__rate {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 46px;
+  padding: 0 10px;
+}
+
+.recipe-detail__rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ccc;
+}
+
+.recipe-detail__rate:not(:checked) > label:before {
+  content: "★ ";
+}
+
+.recipe-detail__rate > input:checked ~ label {
+  color: #ffc700;
+}
+
+.recipe-detail__rate:not(:checked) > input {
+  display: none;
+}
+
+.recipe-detail__ingredients {
+  display: flex;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.recipe-detail__h3 {
+  color: #0e4caa;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 20px 0;
+  padding-top: 30px;
+  border-top: 1px solid #0e4caa;
+}
+
+.recipe-detail__instructions {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.recipe-detail__instructions li {
+  padding-bottom: 10px;
+}
+
+.recipe-detail__instructions a {
+  color: #dd2f3d;
+}
+
+.recipe-detail__instructions a:hover {
+  text-decoration: underline;
+}
+
+.recipe-detail__instructions p {
+  margin: 10px 0 !important;
+  text-align: left !important;
+  font-size: 18px;
+  color: #3d3c3c;
+}
+
+.recipe-detail__instructions ol {
+  line-height: 24px;
+  list-style-type: decimal;
+  margin-left: 20px;
+  font-size: 18px;
+  padding: 0;
+}
+
+.recipe-detail__instructions ul {
+  line-height: 24px;
+  font-size: 18px;
+  padding: 0;
+  list-style: none;
+}
+
+.recipe-detail__instructions h3 {
+  display: flex;
+  color: #0e4caa;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 20px 0;
+  padding-top: 40px;
+  border-top: 1px solid #0e4caa;
 }
 
 /*******COUPON*******/
@@ -346,14 +542,6 @@ article h4 {
   right: 0;
 }
 
-@media (min-width: 800px) {
-  .prev,
-  .next {
-    width: 3rem;
-    height: 3rem;
-    font-size: 1.5rem;
-  }
-}
 article {
   position: absolute;
   top: 0;
@@ -428,4 +616,134 @@ article.nextSlide {
 
 .claimsBox img {
   width: 50%;
+}
+
+/*******CONTEST*******/
+/*********************/
+
+.contest-detail-wrapper {
+  width: 1044px;
+  margin: auto;
+  text-align: center;
+  padding: 30px 0 80px 0;
+}
+
+.contest-detail-wrapper h2 {
+  color: #0e4caa;
+  font-weight: bold;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.contest-block-wrap {
+  display: flex;
+  margin-top: 60px;
+}
+
+.contest-block-wrap img {
+  width: 50%;
+}
+
+.contest__detail-view-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding: 0 30px;
+  text-align: left;
+}
+
+.contest__detail-view-about .buttonRed {
+  margin: 0;
+}
+
+.contest__detail-view-about h3 {
+  color: #0e4caa;
+  font-weight: bold;
+  font-size: 36px;
+  margin: 0;
+}
+
+.contest__detail-about {
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+/*******HOCKEY*******/
+/********************/
+
+.quaker-hockey-banner {
+  position: relative;
+  display: flex;
+}
+
+.quaker-hockey-banner img {
+  width: 100%;
+}
+
+.contest-banner-text {
+  padding-left: 5%;
+  position: absolute;
+  top: 30%;
+  left: 4%;
+  width: 50%;
+  color: #ffffff;
+}
+
+.quaker-hockey-banner h1 {
+  font-family: "ChunkFive-Regular", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 0.85em;
+}
+
+.quaker-hockey-banner h2 {
+  font-family: "ChunkFive-Regular", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1em;
+  font-size: 42px !important;
+  margin-top: 10px;
+}
+
+.hockey-canada-banner-logo-img {
+  position: absolute !important;
+  top: 0 !important;
+  right: 30px !important;
+  width: 180px !important;
+  margin-top: 20px;
+}
+
+.quaker-hockey-official-rules {
+  background-color: #032953;
+  color: #ffffff;
+  padding: 60px 15px 100px;
+  text-align: center;
+  line-height: 1.2em;
+}
+
+.quaker-hockey-official-wrap {
+  width: 1140px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1500px) {
+  .section-center {
+    height: 500px;
+  }
+
+  .footer ul {
+    width: 100%;
+  }
+}
+
+@media (min-width: 800px) {
+  .prev,
+  .next {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+  }
 }
